@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tes Bunyi Ling Six untuk Orang Tua</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700;800&display=swap">
+<style>
+:root{--bg:#f2f5fb;--card:#fff;--ink:#1b2340;--mut:#5d6684;--pri:#4457d6;--onpri:#fff;--ok:#16825a;--bad:#c2374a;--line:#dde3f0;--soft:#e8edfa;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12162a;--card:#1b2140;--ink:#eef1fb;--mut:#a9b1cc;--pri:#8d9bff;--onpri:#10142a;--ok:#4cd59b;--bad:#ff8393;--line:#2c3460;--soft:#232a52;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12162a;--card:#1b2140;--ink:#eef1fb;--mut:#a9b1cc;--pri:#8d9bff;--onpri:#10142a;--ok:#4cd59b;--bad:#ff8393;--line:#2c3460;--soft:#232a52;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Nunito,ui-rounded,system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px 16px 40px}
+h1,h2,h3,.big,.pop,.btn{font-family:"Baloo 2",ui-rounded,"Trebuchet MS",system-ui,sans-serif}
+h1,h2,h3{margin:0;line-height:1.15}
+h1{font-size:27px;font-weight:800}h2{font-size:21px;margin-bottom:10px}h3{font-size:17px;margin-bottom:6px}
+p{margin:.35em 0}.mut{color:var(--mut);font-size:14px}
+header{margin:4px 0 14px}
+.spec{display:flex;gap:4px;margin:12px 0 4px}
+.spec span{flex:1;text-align:center;font-weight:800;font-size:15px;padding:7px 0;border-radius:10px;background:var(--c);color:#14182d}
+.axis{display:flex;justify-content:space-between;font-size:12px;color:var(--mut)}
+.tabs{display:flex;gap:6px;background:var(--soft);padding:5px;border-radius:14px;margin-bottom:14px}
+.tabs button{flex:1;border:0;background:none;color:var(--ink);font:inherit;font-weight:800;padding:10px 4px;border-radius:10px;min-height:44px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--card);box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:14px}
+label.f{display:block;font-weight:700;font-size:14px;margin:10px 0}
+input[type=text],select{width:100%;margin-top:4px;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;min-height:46px}
+.mode{display:flex;gap:10px;align-items:flex-start;border:2px solid var(--line);border-radius:16px;padding:12px;margin:8px 0;cursor:pointer}
+.mode:has(input:checked){border-color:var(--pri);background:var(--soft)}
+.mode small{display:block;color:var(--mut)}
+.mode input{margin-top:5px;accent-color:var(--pri)}
+.btn{display:block;width:100%;min-height:52px;border:0;border-radius:16px;background:var(--pri);color:var(--onpri);font-weight:800;font-size:18px;cursor:pointer;padding:8px 16px;margin-top:12px}
+.btn.sec{background:var(--soft);color:var(--ink)}
+.btn.ok{background:var(--ok);color:var(--bg)}.btn.bad{background:var(--bad);color:var(--bg)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dots{display:flex;gap:7px;justify-content:center;margin-top:6px}
+.dots i{width:12px;height:12px;border-radius:50%;background:var(--line)}
+.dots .done{background:var(--ok)}.dots .now{background:var(--pri);transform:scale(1.4)}
+.prompt{text-align:center;background:var(--soft);background:color-mix(in srgb,var(--c) 18%,var(--card));border:2px solid var(--c);border-radius:22px;padding:14px 16px;margin:12px 0}
+.lbl{font-weight:800;font-size:14px;color:var(--mut)}
+.big{font-size:76px;font-weight:800;line-height:1.1}
+.q{font-weight:700;margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+.pic{border:2px solid var(--line);border-bottom:6px solid var(--c);background:var(--card);color:var(--ink);border-radius:18px;padding:10px 4px;font:inherit;font-weight:800;font-size:14px;cursor:pointer;min-height:104px}
+.pic span{display:block;font-size:44px;line-height:1.2}
+.pop{text-align:center;font-size:46px;font-weight:800;padding:90px 0;animation:pop .45s ease-out}
+@keyframes pop{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+.fix{text-align:center;border:4px solid var(--c);background:var(--soft);background:color-mix(in srgb,var(--c) 18%,var(--card));border-radius:22px;padding:18px 12px;animation:pop .45s ease-out}
+.fe{font-size:96px;line-height:1.2}
+.rr{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;padding:10px 0 10px 12px;border-top:1px solid var(--line);border-left:6px solid var(--c)}
+.rr .em{font-size:26px}.rr b{font-size:18px;min-width:38px}.rr .mut{flex:1 1 140px}
+.st{font-weight:800;font-size:14px;margin-left:auto}.y .st{color:var(--ok)}.n .st{color:var(--bad)}
+.score{font-size:32px;font-weight:800}
+.pips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.pip{font-size:12px;font-weight:800;padding:2px 8px;border-radius:99px;border:1.5px solid var(--line)}.pip.y{color:var(--ok)}.pip.n{color:var(--bad)}
+.h{padding:10px 0;border-top:1px solid var(--line)}
+.wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:420px}
+th,td{text-align:left;padding:7px 6px;border-top:1px solid var(--line);vertical-align:top}
+details{border-top:1px solid var(--line);padding:9px 0}summary{font-weight:800;cursor:pointer}
+ul,ol{padding-left:20px;margin:6px 0}li{margin:3px 0}
+.note{font-size:14px;color:var(--mut);margin-top:12px}
+.lnk{background:none;border:0;color:var(--mut);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer;display:block;margin:14px auto 0;padding:8px}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--pri);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.pop,.fix{animation:none}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Tes Bunyi Ling Six</h1>
+  <p class="mut">Cek harian alat bantu dengar dan implan koklea, dipandu untuk orang tua.</p>
+  <div class="spec" id="spec" aria-hidden="true"></div>
+  <div class="axis" aria-hidden="true"><span>bunyi rendah</span><span>bunyi tinggi</span></div>
+</header>
+
+<nav class="tabs">
+  <button data-v="home" aria-selected="true">Mulai</button>
+  <button data-v="guide" aria-selected="false">Panduan</button>
+  <button data-v="hist" aria-selected="false">Riwayat</button>
+</nav>
+
+<section id="home">
+  <div class="card">
+    <h2>Siapkan tes</h2>
+    <label class="f">Nama anak (boleh dikosongkan)<input type="text" id="name" maxlength="30" autocomplete="off"></label>
+    <label class="f">Perangkat yang dipakai saat tes
+      <select id="cond">
+        <option value="both">Alat di kedua telinga</option>
+        <option value="right">Hanya telinga kanan</option>
+        <option value="left">Hanya telinga kiri</option>
+        <option value="none">Tanpa alat (pembanding)</option>
+      </select></label>
+    <label class="f">Jarak awal dari anak
+      <select id="dist"><option>±1 m</option><option>±2 m</option><option>±3 m</option><option>±5 m</option></select></label>
+    <label class="f">Jam tes (format 24 jam)<select id="hour"></select></label>
+    <div class="f" style="margin-bottom:0">Pilih cara tes</div>
+    <label class="mode"><input type="radio" name="mode" value="detect" checked><span><b>Deteksi: apakah anak merespons?</b><small>Cocok untuk bayi dan balita. Anda mencatat respons anak, ada satu uji senyap sebagai pembanding.</small></span></label>
+    <label class="mode"><input type="radio" name="mode" value="pick"><span><b>Kenali: anak menunjuk gambar</b><small>Cocok untuk anak yang sudah bisa menunjuk. Layar petunjuk ucapan untuk Anda dipisah dari layar gambar untuk anak dengan tombol Cek.</small></span></label>
+    <button class="btn" id="go">Mulai tes (10 percobaan)</button>
+  </div>
+  <div class="card">
+    <h3>Sebelum mulai</h3>
+    <ul>
+      <li>Alat menyala, baterai atau daya cukup, dan terpasang benar.</li>
+      <li>Ruangan tenang, tanpa TV atau musik.</li>
+      <li>Suara Anda sendiri, bukan rekaman. Aplikasi ini tidak memutar bunyi.</li>
+      <li>Tutup mulut dengan tangan atau kertas, atau duduk di belakang anak, supaya anak tidak membaca bibir.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="test" hidden></section>
+<section id="result" hidden></section>
+
+<section id="guide" hidden>
+  <div class="card">
+    <h2>Apa itu bunyi Ling Six?</h2>
+    <p>Enam bunyi sederhana yang mewakili seluruh rentang bunyi ucapan, dari rendah sampai tinggi. Bila semuanya tertangkap, anak umumnya dapat mendengar sebagian besar bunyi bicara dengan alatnya. Tes ini cek cepat harian, bukan diagnosis dan bukan pengganti audiometri.</p>
+    <div class="wrap"><table>
+      <tr><th>Bunyi</th><th>Cara mengucapkan</th><th>Perkiraan frekuensi</th></tr>
+      <tbody id="gt"></tbody>
+    </table></div>
+  </div>
+  <div class="card">
+    <h3>Langkah tes</h3>
+    <ol>
+      <li>Duduk sekitar 1 meter dari anak, di samping atau belakang. Tutup mulut agar tidak terbaca lewat bibir.</li>
+      <li>Ucapkan satu bunyi dengan suara percakapan normal selama 1–2 detik. Ucapkan bunyinya saja: “sss”, bukan “sa”.</li>
+      <li>Beri jeda 2–5 detik yang tidak teratur antar bunyi. Aplikasi mengacak urutan dalam 10 percobaan, dan setiap bunyi muncul minimal sekali.</li>
+      <li>Catat respons anak. Hindari isyarat wajah atau tubuh yang bisa jadi petunjuk.</li>
+      <li>Jika semua tertangkap, jarak boleh ditambah bertahap. Catat jarak terjauh yang masih berhasil.</li>
+    </ol>
+    <details><summary>Tiga tingkat respons</summary>
+      <p><b>Deteksi:</b> anak menunjukkan ia mendengar, misalnya berhenti bermain, menoleh, tersenyum, atau menjatuhkan balok.</p>
+      <p><b>Pembedaan:</b> anak membedakan dua bunyi, misalnya ucapan “uuu” dan “sss” terdengar berbeda.</p>
+      <p><b>Pengenalan:</b> anak mengulang atau menunjuk gambar yang sesuai. Mode Kenali menguji tingkat ini.</p></details>
+    <details><summary>Kapan perlu menghubungi audiolog?</summary>
+      <p>Hubungi audiolog atau tim implan bila bunyi yang sama terlewat berulang beberapa hari, hasil lebih buruk dari biasanya, anak tampak kurang merespons suara sehari-hari, atau setelah memeriksa baterai, mikrofon, kabel atau koil, dan serumen hasilnya tetap sama.</p></details>
+  </div>
+</section>
+
+<section id="hist" hidden></section>
+</main>
+
+<script>
+const SND=[
+{id:'m',sym:'/m/',say:'mmm',how:'Bibir terkatup, bunyi keluar dari hidung seperti “mmm, enak”.',hz:'250–500 Hz',band:'Rendah',emo:'🍦',cap:'Es krim',c:'#8a7cf0'},
+{id:'u',sym:'/u/',say:'uuu',how:'Bibir membulat dan maju seperti “u” pada “buku”.',hz:'300–800 Hz',band:'Rendah',emo:'🚂',cap:'Kereta',c:'#5b9cf0'},
+{id:'a',sym:'/a/',say:'aaa',how:'Mulut terbuka lebar seperti “a” pada “api”.',hz:'700–1.100 Hz',band:'Menengah',emo:'✈️',cap:'Pesawat',c:'#35bdb4'},
+{id:'i',sym:'/i/',say:'iii',how:'Bibir melebar seperti “i” pada “ini”.',hz:'±300 dan 2.500–3.000 Hz',band:'Rendah dan tinggi',emo:'🐭',cap:'Tikus',c:'#7ccb5f'},
+{id:'sh',sym:'/sh/',say:'shhh',how:'Bibir sedikit maju, seperti saat berkata “sstt, diam”.',hz:'2.000–4.000 Hz',band:'Tinggi',emo:'🤫',cap:'Sstt!',c:'#f0b93a'},
+{id:'s',sym:'/s/',say:'sss',how:'Gigi dirapatkan, desis seperti ular.',hz:'4.000–8.000 Hz',band:'Sangat tinggi',emo:'🐍',cap:'Ular',c:'#f07b5b'}];
+const COND={both:'Alat kedua telinga',right:'Telinga kanan',left:'Telinga kiri',none:'Tanpa alat'};
+const MODE={detect:'Deteksi',pick:'Kenali'};
+const $=s=>document.querySelector(s), S=id=>SND.find(x=>x.id===id);
+const esc=t=>t.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const K='ling6-riwayat';
+function load(){try{return JSON.parse(localStorage.getItem(K)||'[]')}catch(x){return []}}
+function store(en){try{const H=load();H.unshift(en);localStorage.setItem(K,JSON.stringify(H.slice(0,60)))}catch(x){}}
+let T=null;
+
+$('#spec').innerHTML=SND.map(s=>`<span style="--c:${s.c}">${s.sym}</span>`).join('');
+$('#gt').innerHTML=SND.map(s=>`<tr><td><b>${s.emo} ${s.sym}</b></td><td>${s.how}</td><td>${s.hz}<br><span class="mut">${s.band}</span></td></tr>`).join('');
+
+(function(){const h=$('#hour');for(let i=0;i<24;i++){const t=String(i).padStart(2,'0')+':00';h.add(new Option(t,t))}h.value=String(new Date().getHours()).padStart(2,'0')+':00'})();
+function view(v){
+  ['home','test','result','guide','hist'].forEach(x=>{$('#'+x).hidden=x!==v});
+  const tab=(v==='test'||v==='result')?'home':v;
+  document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.v===tab));
+  if(v==='hist')renderHist();
+  window.scrollTo(0,0);
+}
+document.querySelector('.tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)view(b.dataset.v==='home'&&T&&T.i<T.q.length?'test':b.dataset.v)});
+
+$('#go').onclick=()=>{
+  const mode=document.querySelector('input[name=mode]:checked').value;
+  const q=makeQ(mode==='detect');
+  T={name:$('#name').value.trim(),cond:$('#cond').value,dist:$('#dist').value,hour:$('#hour').value,mode,q,i:0,res:[],grid:shuffle(SND.map(s=>s.id))};
+  trial();
+};
+
+function makeQ(det){
+  const ids=SND.map(s=>s.id);
+  let q=ids.concat(shuffle(ids).slice(0,det?3:4)),t=0;
+  do{q=shuffle(q);t++}while(t<60&&q.some((x,j)=>j&&x===q[j-1]));
+  if(det)q.splice(Math.floor(Math.random()*(q.length+1)),0,'quiet');
+  return q;
+}
+function trial(){
+  const id=T.q[T.i];
+  let h=`<div class="card"><div class="dots">${T.q.map((_,k)=>`<i class="${k<T.i?'done':k===T.i?'now':''}"></i>`).join('')}</div><p class="mut" style="text-align:center">Giliran ${T.i+1} dari ${T.q.length}</p>`;
+  const pk=T.mode==='pick'&&T.phase==='pick';
+  if(pk){}
+  else if(id==='quiet')h+=`<div class="prompt" style="--c:#9aa3c0"><div class="lbl">Uji senyap</div><div class="big">😴</div><p><b>Jangan ucapkan apa pun.</b> Tunggu 3 detik dan bersikap seperti biasa, lalu catat apakah anak merespons.</p></div>`;
+  else{const s=S(id);h+=`<div class="prompt" style="--c:${s.c}"><div class="lbl">Ucapkan sekarang</div><div class="big">${s.sym}</div><p>Bunyikan “<b>${s.say}</b>” selama 1–2 detik. ${s.how}</p></div>`}
+  if(T.mode==='detect')h+=`<p class="q">Apakah anak merespons? (berhenti, menoleh, tersenyum, menjatuhkan balok)</p><div class="row"><button class="btn ok" data-a="yes">Ya, merespons</button><button class="btn bad" data-a="no">Tidak</button></div>`;
+  else if(!pk)h+=`<p class="q">Ucapkan bunyi di atas, lalu tekan Cek. Layar berikutnya untuk anak.</p><button class="btn" data-c="1">Cek</button>`;
+  else h+=`<p class="q">Mana yang kamu dengar tadi? Tunjuk gambarnya.</p><div class="grid">${shuffle(SND.map(s=>s.id)).map(g=>{const s=S(g);return `<button class="pic" style="--c:${s.c}" data-p="${g}"><span>${s.emo}</span>${s.cap}</button>`}).join('')}</div>`;
+  h+=`${pk?'':'<p class="note">Suara langsung, volume percakapan normal, mulut ditutup.</p>'}<button class="lnk" data-x="1">Hentikan tes</button></div>`;
+  $('#test').innerHTML=h;view('test');
+}
+$('#test').addEventListener('click',e=>{
+  const b=e.target.closest('[data-a],[data-p],[data-x],[data-c],[data-n]');if(!b||!T)return;
+  if(b.dataset.x){T=null;view('home');return}
+  if(b.dataset.c){T.phase='pick';trial();return}
+  if(b.dataset.n){next();return}
+  const id=T.q[T.i];
+  if(b.dataset.a){T.res.push({id,ok:id==='quiet'?b.dataset.a==='no':b.dataset.a==='yes'});next()}
+  else{
+    const ok=b.dataset.p===id;T.res.push({id,ok,picked:b.dataset.p});
+    if(ok){$('#test').innerHTML='<div class="pop">⭐<br>Hebat!</div>';setTimeout(next,800)}
+    else{const s=S(id);$('#test').innerHTML=`<div class="card"><div class="fix" style="--c:${s.c}"><p class="q" style="margin:0">Yang seharusnya dipilih:</p><div class="fe">${s.emo}</div><h2>${s.cap}</h2><p class="mut">Bunyi ${s.sym} (${s.say})</p></div><button class="btn" data-n="1">Lanjut</button></div>`}
+  }
+});
+function next(){T.i++;T.phase='say';T.i>=T.q.length?finish():trial()}
+
+function advice(it,quiet){
+  const miss=it.filter(r=>!r.ok), ids=miss.map(r=>r.id), has=a=>a.some(x=>ids.includes(x)), L=[];
+  if(!miss.length&&quiet!==false)L.push('Semua bunyi Ling tertangkap hari ini. Pertahankan cek rutin setiap hari, terutama sebelum anak berangkat sekolah atau beraktivitas.');
+  if(has(['s','sh']))L.push('Bunyi tinggi (/s/ atau /sh/) terlewat. Bunyi ini paling halus, jadi paling mudah hilang bila alat bermasalah atau telinga tersumbat serumen.');
+  if(has(['m','u']))L.push('Bunyi rendah (/m/ atau /u/) terlewat. Periksa pengaturan volume atau program, dan pastikan ruangan benar-benar tenang.');
+  if(has(['a','i']))L.push('Bunyi vokal (/a/ atau /i/) terlewat. Ulangi dengan suara sedikit lebih jelas dan jarak yang sama.');
+  if(new Set(ids).size>=3)L.push('Banyak bunyi terlewat sekaligus. Periksa dulu apakah alat benar-benar menyala dan terpasang baik.');
+  const conf=[...new Set(miss.filter(r=>r.picked).map(r=>`${S(r.id).sym} dikira ${S(r.picked).sym}`))];
+  if(conf.length)L.push('Bunyi yang tertukar: '+conf.join(', ')+'. Tertukar berarti anak mendengar, tetapi belum bisa membedakan dengan jelas.');
+  if(quiet===false)L.push('Anak merespons saat tidak ada bunyi, jadi hasil deteksi kurang andal. Ulangi tes dalam suasana lebih tenang.');
+  if(miss.length)L.push('Cek dulu: baterai atau daya, mikrofon, kabel atau koil, selang dan serumen, serta program yang dipilih. Lalu ulangi tes. Jika hasil sama beberapa hari berturut-turut, atau lebih buruk dari biasanya, hubungi audiolog atau tim implan.');
+  return L;
+}
+
+function finish(){
+  const it=T.res.filter(r=>r.id!=='quiet'), qt=T.res.find(r=>r.id==='quiet');
+  const n=it.filter(r=>r.ok).length, det=T.mode==='detect';
+  store({t:Date.now(),name:T.name,cond:T.cond,dist:T.dist,hour:T.hour,mode:T.mode,r:Object.fromEntries(SND.map(s=>{const rs=it.filter(x=>x.id===s.id);return [s.id,[rs.filter(x=>x.ok).length,rs.length]]}))});
+  const rows=SND.map(s=>{const rs=it.filter(x=>x.id===s.id),k=rs.filter(x=>x.ok).length,g=k===rs.length,wp=[...new Set(rs.filter(x=>x.picked&&!x.ok).map(x=>S(x.picked).sym))],w=wp.length?` · dikira ${wp.join(', ')}`:'';
+    return `<div class="rr ${g?'y':'n'}" style="--c:${s.c}"><span class="em">${s.emo}</span><b>${s.sym}</b><span class="mut">${s.band} · ${s.hz}${w}</span><span class="st">${g?'✓':'✕'} ${k}/${rs.length} ${det?'merespons':'benar'}</span></div>`}).join('');
+  const quiet=qt?`<div class="rr ${qt.ok?'y':'n'}" style="--c:#9aa3c0"><span class="em">😴</span><b>Senyap</b><span class="mut">Uji pembanding</span><span class="st">${qt.ok?'✓ Tidak merespons':'⚠ Merespons'}</span></div>`:'';
+  const A=advice(it,qt?qt.ok:null);
+  $('#result').innerHTML=`<div class="card"><p class="mut">${esc(T.name||'Anak')} · ${COND[T.cond]} · ${T.dist} · jam ${T.hour} · ${MODE[T.mode]}</p>
+  <div class="score">${n} dari ${it.length} percobaan bunyi ${det?'terdeteksi':'dikenali'}</div>${rows}${quiet}</div>
+  <div class="card"><h3>Yang bisa dilakukan</h3><ul>${A.map(a=>`<li>${a}</li>`).join('')}</ul>
+  <p class="note">Hasil ini tersimpan di riwayat pada perangkat ini. Tes ini hanya cek cepat, bukan diagnosis.</p></div>
+  <button class="btn" id="again">Tes lagi</button><button class="btn sec" id="seeh">Lihat riwayat</button>`;
+  T=null;view('result');
+  $('#again').onclick=()=>view('home');$('#seeh').onclick=()=>view('hist');
+}
+
+function renderHist(){
+  const H=load();
+  if(!H.length){$('#hist').innerHTML='<div class="card"><h2>Riwayat tes</h2><p>Belum ada tes. Selesaikan satu tes di tab Mulai, hasilnya akan muncul di sini.</p></div>';return}
+  $('#hist').innerHTML=`<div class="card"><h2>Riwayat tes</h2>`+H.map(e=>`<div class="h"><b>${esc(e.name||'Anak')}</b> <span class="mut">${new Date(e.t).toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'})}${e.hour?' · jam '+e.hour:''} · ${MODE[e.mode]||''} · ${COND[e.cond]||''} · ${esc(e.dist||'')}</span><div class="pips">${SND.map(s=>{const v=e.r[s.id],a=Array.isArray(v)?v:[v?1:0,1],g=a[0]===a[1];return `<span class="pip ${g?'y':'n'}">${s.sym} ${g?'✓':'✕'} ${a[0]}/${a[1]}</span>`}).join('')}</div></div>`).join('')+`<p class="note">Riwayat hanya tersimpan di peramban perangkat ini dan tidak dikirim ke mana pun.</p><button class="btn sec" id="clr">Hapus semua riwayat</button></div>`;
+  let armed=false;
+  $('#clr').onclick=function(){if(!armed){armed=true;this.textContent='Tekan lagi untuk menghapus';return}try{localStorage.removeItem(K)}catch(x){}renderHist()};
+}
+</script>
+</body>
+</html>
